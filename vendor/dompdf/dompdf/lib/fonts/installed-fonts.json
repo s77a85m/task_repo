@@ -1,0 +1,13 @@
+{
+    "vazirmatn": {
+        "100": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_100_bae5e60ff0fe2c16e6f95a70e4553aec",
+        "200": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_200_bc5036d83077dc9bdf2e841bc2bdb16e",
+        "300": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_300_5855707d6eda0210d234cd3ff71d3e40",
+        "normal": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_normal_67c2afa55c91cdb63b1f671d697b732b",
+        "500": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_500_b251f12b230a149e6b7f91b61eee97f4",
+        "600": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_600_a0c024f5633be1ab48efb4d01cdd5e1b",
+        "bold": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_bold_01dcb74b4ff565b5e29c986ddd5edc35",
+        "800": "D:\\wampserver\\www\\test_khatRoshan\\getContent\\vendor\\dompdf\\dompdf\/lib\/fonts\/vazirmatn_800_2963ab7f0efb296e263690c676193945",
+        "900": "vazirmatn_900_5d90b531c4b6a1bfb5ff43408cacd2ea"
+    }
+}

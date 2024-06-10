@@ -1,0 +1,17 @@
+{
+    "require": {
+        "dompdf/dompdf": "^3.0",
+        "mpdf/mpdf": "^8.2",
+        "convertapi/convertapi-php": "^2.0",
+        "api2pdf/api2pdf.php": "^2.0",
+        "tecnickcom/tc-lib-pdf": "^8.0",
+        "aspose/slides": "^24.5",
+        "ext-curl": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:tecnickcom/tc-lib-pdf.git"
+        }
+    ]
+}
