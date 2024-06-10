@@ -12,7 +12,7 @@ This repository contains a number of tasks that have been completed and uploaded
 ## How to use api (for pdf of page)
 1. call the api and pass productId as below:
    
-`http://127.0.0.1/test_khatRoshan/getcontent/api/getPdf.php?productId=BM-197449`
+`http://127.0.0.1/getcontent/api/getPdf.php?productId=BM-197449`
 
 ***
 ### The requested queries are located in the query_table path
