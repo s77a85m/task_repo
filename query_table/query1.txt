@@ -1,0 +1,13 @@
+SELECT
+    t.id,
+    t.Name,
+    COUNT(ti.id) AS product_count
+FROM
+    topics t
+LEFT JOIN
+    tickets ti
+ON
+    t.id = ti.topic_id
+GROUP BY
+    t.id,
+    t.Name;

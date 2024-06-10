@@ -1,0 +1,51 @@
+SELECT
+    t.id AS topic_id,
+    t.name AS topic_name,
+    IFNULL(ti.ticket_count, 0) + IFNULL(sub.ticket_count, 0) AS total_ticket_count
+FROM
+    topics t
+LEFT JOIN
+    (SELECT
+        t1.id AS topic_id,
+        COUNT(ti.id) AS ticket_count
+     FROM
+        topics t1
+     LEFT JOIN
+        tickets ti ON t1.id = ti.topic_id
+     GROUP BY
+        t1.id) ti ON t.id = ti.topic_id
+LEFT JOIN
+    (SELECT
+        t2.parent_id AS parent_topic_id,
+        COUNT(ti.id) AS ticket_count
+     FROM
+        topics t2
+     LEFT JOIN
+        tickets ti ON t2.id = ti.topic_id
+     WHERE
+        t2.parent_id IS NOT NULL
+     GROUP BY
+        t2.parent_id) sub ON t.id = sub.parent_topic_id
+WHERE
+    t.parent_id IS NULL
+UNION
+SELECT
+    t.id AS topic_id,
+    t.name AS topic_name,
+    IFNULL(ti.ticket_count, 0) AS total_ticket_count
+FROM
+    topics t
+LEFT JOIN
+    (SELECT
+        t1.id AS topic_id,
+        COUNT(ti.id) AS ticket_count
+     FROM
+        topics t1
+     LEFT JOIN
+        tickets ti ON t1.id = ti.topic_id
+     GROUP BY
+        t1.id) ti ON t.id = ti.topic_id
+WHERE
+    t.parent_id IS NOT NULL
+ORDER BY
+    topic_id;
